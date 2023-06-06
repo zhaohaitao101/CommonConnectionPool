@@ -2,6 +2,7 @@
 
 using namespace std;
 #include"Connection.h"
+#include"CommonConnectionPool.h"
 
 int main()
 {
@@ -13,5 +14,9 @@ int main()
 	conn.connect("127.0.0.1", 3306, "root", "123456", "chat");
 	conn.update(sql);
 	*/
+
+	ConnectionPool* cp = ConnectionPool::getConnectionPool();
+	
+
 	return 0;
 }

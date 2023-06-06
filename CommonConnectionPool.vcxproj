@@ -135,9 +135,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CommonCommectionPool.h" />
+    <ClInclude Include="CommonConnectionPool.h" />
     <ClInclude Include="Connection.h" />
     <ClInclude Include="public.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mysql.ini" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
